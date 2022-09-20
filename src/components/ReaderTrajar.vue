@@ -53,6 +53,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
+    padding-left:50px;
     
 }
 
