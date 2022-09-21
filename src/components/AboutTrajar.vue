@@ -39,6 +39,7 @@ export default {
     display: flex;
     flex-direction: row;
     padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 100px;
 }
 
