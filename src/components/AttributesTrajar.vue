@@ -30,11 +30,10 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1366px;
-    height: 150px;
+    height: 200px;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .attr-item {
