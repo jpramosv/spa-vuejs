@@ -1,18 +1,21 @@
 <template>
     <header class="menu">
-        <div class="menu-container">
+        <nav>
             <a class="menu-logo" href="#"><img src="@/assets/logo.png" alt="logo"></a>
+            <div class="mobile-menu">
+                <div class="line1">cae</div>
+                <div class="line1"></div>
+                <div class="line1"></div>
+            </div>
+            <ul class="nav-list">
+                <li> <a href="#">Empresa</a></li>
+                <li> <a href="#">Camisaria</a></li>
+                <li> <a href="#">Alfaiataria</a></li>
+                <li> <a href="#">Depoimentos</a></li>
+                <li> <a href="#">Contato</a></li>
+            </ul>
+        </nav>
 
-            <nav class="menu-nav">
-                <ul>
-                    <li> <a href="#">Empresa</a></li>
-                    <li> <a href="#">Camisaria</a></li>
-                    <li> <a href="#">Alfaiataria</a></li>
-                    <li> <a href="#">Depoimentos</a></li>
-                    <li> <a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
 </template>
 
@@ -20,6 +23,7 @@
 export default {
     name: 'ReaderTrajar'
 }
+
 </script>
 <style>
 /* Reset */
@@ -40,34 +44,32 @@ body {
 
 .menu {
     position: fixed;
-    left: 0;
-    top: 0;
+    top: 0px;
     width: 100%;
 
 }
 
-.menu-container {
-    max-width: 1366px;
-    max-height: 111px;
-    margin: 0 auto;
-    background: linear-gradient(180deg, #000000 29.73%, rgba(0, 0, 0, 0) 100%);
+nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 50px;
-
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: linear-gradient(180deg, #000000 29.73%, rgba(0, 0, 0, 0) 100%);
+    height: 8vh;
 }
 
-.menu-nav li {
-    display: inline-block;
+
+.nav-list {
+    list-style: none;
+    display: flex;
 }
 
-.menu-nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 1.125em;
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list a {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
@@ -75,6 +77,48 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: #949494;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
 }
 </style>>
  

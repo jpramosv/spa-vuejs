@@ -54,6 +54,7 @@ export default {
     padding-left: 50px;
     padding-top: 100px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .camisaria-img {
@@ -61,13 +62,13 @@ export default {
 }
 
 .camisaria-img img {
-    width: 100%;
+    width: 90%;
 }
 
 .camisaria-img {
 
     margin: 20px auto;
-    padding-right: -100px;
+    padding-right: -80px;
     border: 7px solid white;
     box-shadow: 0 0 0 1px #1C86A4;
 
@@ -94,7 +95,7 @@ export default {
     height: 400px;
     width: 700px;
     justify-content: center;
-    margin-right: 100px;
+    margin-right: 80px;
     border-top: 1px solid #E5E5E5;
     border-right: 0px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;

@@ -30,16 +30,17 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1366px;
-    height: 200px;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .attr-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
 }
 
 .attr-item img {

@@ -53,7 +53,7 @@ export default {
     font-family: 'Playfair Display';
     font-style: italic;
     font-weight: 400;
-    font-size: 32.5627px;
+    font-size: 0.35em;
     line-height: 43px;
     color: #BE9667;
 }
@@ -64,7 +64,7 @@ export default {
     font-family: 'Playfair Display';
     font-style: italic;
     font-weight: 400;
-    font-size: 32.5627px;
+    font-size: 0.35em;
     line-height: 43px;
     color: #BE9667;
     padding-left: 135px;
@@ -72,12 +72,13 @@ export default {
 
 .intro h2 {
     margin-top: 150px;
+    margin-left: 10px;
     max-width: 438px;
     max-height: 93px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 131%;
     text-transform: uppercase;
     color: #949494;
@@ -105,5 +106,62 @@ export default {
 
 .intro-btn a {
     color: #E5E5E5;
+}
+
+@media (max-width: 999px) {
+
+    .intro-container {
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .intro h1 {
+        width: 300.18px;
+        height: 119.58px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4em;
+        line-height: 120px;
+        color: rgba(2, 75, 104, 0.68);
+        margin-top: 150px;
+
+    }
+
+    .intro h1::before {
+        content: 'Elegante é ter um';
+        display: block;
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 0.35em;
+        line-height: 43px;
+        color: #BE9667;
+    }
+
+    .intro h1::after {
+        content: 'para chamar de seu.';
+        display: block;
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 0.35em;
+        line-height: 43px;
+        color: #BE9667;
+        padding-left: 135px;
+    }
+
+    .intro h2 {
+        margin-top: 150px;
+        max-width: 438px;
+        max-height: 93px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 131%;
+        text-transform: uppercase;
+        color: #949494;
+    }
 }
 </style>

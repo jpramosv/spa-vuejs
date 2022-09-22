@@ -96,4 +96,28 @@ export default {
 .offer-desc span {
     color: #E5E5E5;
 }
+
+@media(max-width:864px) {
+    .offer-container {
+        flex-wrap: wrap;
+    }
+
+    .offer-img {
+        display: none;
+    }
+
+    .offer-desc {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .offer-desc p {
+        margin: 10px;
+    }
+
+    .offer-btn {
+        align-self: center;
+    }
+
+}
 </style>

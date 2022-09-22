@@ -37,7 +37,7 @@ export default {
     max-width: 1366px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 100px;
@@ -48,12 +48,17 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-basis: 0;
     padding-left: 100px;
+    font-size: 1em;
+    line-height: 1em;
+    flex-grow: 1;
 
 }
 
 .about-img img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 370px;
 }
 
 .about-item h1 {
@@ -80,18 +85,22 @@ export default {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
-    font-size: 19px;
+    font-size: 1.2em;
     line-height: 141.3%;
     color: #333333;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .dest p {
     font-family: 'Cormorant';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.2em;
     line-height: 141.3%;
     color: #1C86A4;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .about-btn {
@@ -111,5 +120,35 @@ export default {
 
 .about-btn a {
     color: #E5E5E5;
+}
+
+@media (max-width: 999px) {
+    .about-container {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        padding: 0px;
+    }
+
+    .about-item h1 {
+        text-align: center;
+    }
+
+    .about-item p {
+        padding: 15px;
+    }
+
+    .about-img img {
+        margin-top: 30px;
+        max-width: 100%;
+
+    }
+
+    .about-btn {
+        align-self: center;
+    }
 }
 </style>

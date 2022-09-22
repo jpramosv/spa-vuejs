@@ -11,12 +11,12 @@
                     </div>
 
                 </div>
-                <div class="img-client">
-                    <img src="@/assets/img.png" alt="">
-                </div>
+
             </div>
-            <div>
-                <img src="@/assets/img1.png" alt="">
+
+            <div class="img-client-cont">
+                <img class="img-client" src="@/assets/img.png" alt="">
+                <img class="img-client1" src="@/assets/img1.png" alt="">
             </div>
 
         </div>
@@ -39,27 +39,32 @@ export default {
     max-width: 1366px;
     display: flex;
     margin: 0 auto;
+
 }
 
 .item-client {
     display: flex;
+    max-width: 600px;
     padding-left: 50px;
     margin-top: 50px;
     background: url('@/assets/tailor.png') no-repeat center;
     background-size: cover;
 }
 
-.img-client img {
-    position: relative;
-    left: 80px;
-    bottom: 50px;
+.img-client {
+    margin-right: -50px;
+    z-index: 1;
+}
 
+.img-client1 {
+    z-index: 1;
 }
 
 .client-dep {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 500px;
 }
 
 .client-dep>h2 {
@@ -90,5 +95,17 @@ export default {
     line-height: 141.3%;
     text-align: center;
     color: #BE9667;
+}
+
+@media (max-width: 999px) {
+    .client-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-client-cont img {
+        width: 50%;
+    }
 }
 </style>
