@@ -6,6 +6,7 @@
     <AttributesTrajar />
     <OfferTrajar />
     <ProductsTrajar />
+    <BriefTrajar />
 </template>
   
 <script>
@@ -16,6 +17,7 @@ import ClienteTrajar from '../components/ClienteTrajar.vue';
 import AttributesTrajar from '../components/AttributesTrajar.vue';
 import OfferTrajar from '../components/OfferTrajar.vue';
 import ProductsTrajar from '../components/ProductsTrajar.vue';
+import BriefTrajar from '../components/BriefTrajar.vue'
 
 export default {
     name: 'HomeTrajar',
@@ -26,7 +28,8 @@ export default {
         ClienteTrajar,
         AttributesTrajar,
         OfferTrajar,
-        ProductsTrajar
+        ProductsTrajar,
+        BriefTrajar
     }
 }
 </script>
