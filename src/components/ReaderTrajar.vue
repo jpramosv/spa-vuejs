@@ -2,7 +2,7 @@
     <header class="menu">
         <div class="menu-container">
             <a class="menu-logo" href="#"><img src="@/assets/logo.png" alt="logo"></a>
-           
+
             <nav class="menu-nav">
                 <ul>
                     <li> <a href="#">Empresa</a></li>
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-    export default{
-        name: 'ReaderTrajar'
-    }
+export default {
+    name: 'ReaderTrajar'
+}
 </script>
 <style>
-   /* Reset */
+/* Reset */
 body,
 h1,
 h2,
@@ -37,14 +37,16 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #252525;
 }
-.menu{
+
+.menu {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;  
-    
+    width: 100%;
+
 }
-.menu-container{
+
+.menu-container {
     max-width: 1366px;
     max-height: 111px;
     margin: 0 auto;
@@ -53,18 +55,18 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
-    padding-left:50px;
-    
+    padding-left: 50px;
+
 }
 
-.menu-nav li{
+.menu-nav li {
     display: inline-block;
 }
-.menu-nav a{
+
+.menu-nav a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #fff;
     font-size: 1.125em;
     font-family: 'Lato';
     font-style: normal;
@@ -73,9 +75,7 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: #949494;
-
 }
-
 </style>>
  
 
