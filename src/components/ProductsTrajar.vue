@@ -153,8 +153,4 @@ export default {
     margin-top: 15px;
 
 }
-
-.products-btn a {
-    color: #E5E5E5;
-}
 </style>
