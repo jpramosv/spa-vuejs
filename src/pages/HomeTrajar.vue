@@ -8,7 +8,7 @@
     <ProductsTrajar />
     <BriefTrajar />
     <ContactTrajar />
-
+    <FooterTrajar />
 </template>
   
 <script>
@@ -21,6 +21,7 @@ import OfferTrajar from '../components/OfferTrajar.vue';
 import ProductsTrajar from '../components/ProductsTrajar.vue';
 import BriefTrajar from '../components/BriefTrajar.vue';
 import ContactTrajar from '../components/ContactTrajar.vue'
+import FooterTrajar from '@/components/FooterTrajar.vue';
 
 
 
@@ -35,7 +36,8 @@ export default {
         OfferTrajar,
         ProductsTrajar,
         BriefTrajar,
-        ContactTrajar
+        ContactTrajar,
+        FooterTrajar
     }
 }
 </script>

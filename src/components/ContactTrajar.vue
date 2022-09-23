@@ -159,7 +159,6 @@ input:nth-child(3) {
 
         min-width: 300px;
 
-
     }
 
 
