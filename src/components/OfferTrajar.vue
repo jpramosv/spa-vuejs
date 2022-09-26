@@ -93,6 +93,13 @@ export default {
 
 }
 
+.offer-btn:hover {
+
+    background: gray;
+    border: 1px solid #16085b;
+    transition: 1s;
+}
+
 .offer-desc span {
     color: #E5E5E5;
 }

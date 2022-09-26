@@ -49,6 +49,12 @@ body {
 
 }
 
+.nav-list a:hover {
+    color: #00CED1;
+    transition: 1s;
+
+}
+
 nav {
     display: flex;
     justify-content: space-around;

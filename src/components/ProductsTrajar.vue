@@ -153,4 +153,11 @@ export default {
     margin-top: 15px;
 
 }
+
+.products-btn:hover {
+
+    background: #160d42;
+    border: 1px solid rgb(206, 203, 15);
+    transition: 1s;
+}
 </style>

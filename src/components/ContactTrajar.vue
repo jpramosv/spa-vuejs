@@ -153,6 +153,21 @@ input:nth-child(3) {
     text-decoration: none;
 }
 
+.contact-btn:hover {
+
+    border: 1px solid rgb(206, 203, 15);
+    transition: 1s;
+    color: rgb(206, 203, 15);
+}
+
+
+.btn-submit:hover {
+
+    background: #4169E1;
+    border: 1px solid rgb(206, 203, 15);
+    transition: 1s;
+}
+
 @media(max-width:764px) {
 
     .contact-itens input {

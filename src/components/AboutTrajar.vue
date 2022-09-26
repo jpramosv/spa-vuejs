@@ -56,6 +56,13 @@ export default {
 
 }
 
+.about-btn:hover {
+
+    background: black;
+    border: 1px solid #16085b;
+    transition: 1s;
+}
+
 .about-img img {
     max-width: 100%;
     min-width: 370px;

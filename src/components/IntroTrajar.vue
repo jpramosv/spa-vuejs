@@ -108,6 +108,13 @@ export default {
     color: #E5E5E5;
 }
 
+.intro-btn:hover {
+
+    background: black;
+    border: 1px solid #BE9667;
+    transition: 1s;
+}
+
 @media (max-width: 999px) {
 
     .intro-container {
